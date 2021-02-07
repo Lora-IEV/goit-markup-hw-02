@@ -1,3 +1,16 @@
+:root {
+  --pre-black: rgba(33, 33, 33, 1);
+  --white: rgba(255, 255, 255, 1);
+  --grey: rgba(117, 117, 117, 1);
+  --blue: rgba(33, 150, 243, 1);
+  --black: rgba(0, 0, 0, 1);
+  --dark-grey: rgba(47, 48, 58, 1);
+  --white-op62: rgba(255, 255, 255, 0.62);
+  --grey-white: rgba(236, 236, 236, 1);
+  --light-grey-white: rgba(245, 244, 250, 1);
+  --black-op25: rgba(0, 0, 0, 0.25);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -10,16 +23,16 @@ header {
 
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
   height: 31px;
   width: 145px;
   left: 215px;
   top: 24px;
-  text-shadow: 0px 4px 4px var(--black-op25);
+  /* text-shadow: 0px 4px 4px var(--black-op25);  добавление тени для логотипа, включу потом*/ 
 }
 
 .logo:hover,
@@ -45,7 +58,7 @@ header {
   height: 16px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1.15;
   letter-spacing: 0.02em;
 }
 
@@ -73,7 +86,7 @@ header {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: 16px;
+  line-height: 1.15;
 }
 
 .header-address a:visited {
@@ -97,7 +110,7 @@ header {
   text-transform: uppercase;
   font-size: 44px;
   font-weight: 900;
-  line-height: 60px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
 }
@@ -108,7 +121,7 @@ header {
   background-color: var(--blue);
   font-size: 16px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
 }
@@ -139,16 +152,17 @@ header {
   color: var(--pre-black);
   font-size: 14px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .our-advantages p {
   color: var(--grey);
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
 }
@@ -164,7 +178,7 @@ header {
   color: var(--pre-black);
   font-size: 36px;
   font-weight: 700;
-  line-height: 42px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -184,7 +198,7 @@ header {
   color: var(--pre-black);
   font-size: 36px;
   font-weight: 700;
-  line-height: 42px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -197,7 +211,7 @@ header {
   color: var(--pre-black);
   font-size: 16px;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
@@ -205,7 +219,7 @@ header {
   color: var(--grey);
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
@@ -220,7 +234,7 @@ footer {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: left;
   text-decoration: none;
@@ -235,7 +249,7 @@ footer {
   color: var(--white);
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
   text-indent: ;
@@ -250,7 +264,7 @@ footer {
   color: var(--white-op62);
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
   text-decoration: none;
@@ -263,13 +277,19 @@ footer {
   list-style-type: none;
 }
 
+.portfolio-buttons button:focus,
+.portfolio-buttons button:hover {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
 .portfolio-button-text {
   color: var(--pre-black);
   background-color: var(--light-grey-white);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 1.63;
   letter-spacing: 0.03em;
 }
 
@@ -277,12 +297,12 @@ footer {
   list-style-type: none;
 }
 
-.all-progects h3 {
+.all-progects h2 {
   color: var(--pre-black);
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 
@@ -291,6 +311,6 @@ footer {
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.88;
   letter-spacing: 0.03em;
 }
